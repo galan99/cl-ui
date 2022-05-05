@@ -1,0 +1,25 @@
+{
+  "globals": {
+    "ga": true,
+    "chrome": true
+  },
+  "plugins": ["html", "json"],
+  "extends": "elemefe",
+  "rules": {
+    "no-restricted-globals": ["error", "event", "fdescribe"],
+    "comma-dangle": ["error", {
+      // "arrays": "never",
+      "objects": "only-multiline",
+      // "imports": "never",
+      // "exports": "never",
+      // "functions": "never"
+    }]
+
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  }
+}
